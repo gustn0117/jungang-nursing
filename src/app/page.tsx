@@ -71,51 +71,38 @@ export default function Home() {
 
       {/* ── About Intro ── */}
       <section className="py-24 md:py-32 bg-white">
-        <div className="max-w-7xl mx-auto px-6 lg:px-10">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-            <div className="relative">
-              <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl shadow-neutral-200">
-                <Image src="/IMG_5381.JPG" alt="워크메이트 재활 훈련" fill className="object-cover" />
+        <div className="max-w-3xl mx-auto px-6 lg:px-10 text-center">
+          <p className="font-display text-accent text-sm tracking-[0.3em] uppercase italic" style={{ fontWeight: 300 }}>About Us</p>
+          <h2 className="section-title mt-4">
+            품위 있는 노후를
+            <br />
+            함께 가꿉니다
+          </h2>
+          <div className="gold-line-center mt-5" />
+          <p className="mt-8 text-neutral-600 text-[15px] leading-[1.9]">
+            중앙요양원은 대전역 바로 앞, 교통이 가장 편리한 곳에 위치해 있습니다.
+            최근 전면 리모델링을 마친 9층 대형 건물에서 호텔처럼 품격 있는
+            요양 서비스를 제공합니다.
+          </p>
+          <p className="mt-4 text-neutral-600 text-[15px] leading-[1.9]">
+            전문 간호 인력이 24시간 상주하며, 물리치료·운동재활·인지치료 등
+            체계적인 프로그램으로 어르신의 건강을 돌봅니다.
+          </p>
+          <div className="mt-10 flex justify-center gap-12">
+            {[
+              { num: "9", unit: "층", label: "대형 건물" },
+              { num: "24", unit: "h", label: "전문 간호" },
+              { num: "365", unit: "일", label: "연중무휴" },
+            ].map((s) => (
+              <div key={s.label}>
+                <p className="font-display text-3xl text-primary" style={{ fontWeight: 500 }}>
+                  {s.num}<span className="text-accent text-base ml-0.5">{s.unit}</span>
+                </p>
+                <p className="text-xs text-neutral-500 mt-1">{s.label}</p>
               </div>
-              <div className="absolute -bottom-6 -right-6 w-40 h-40 rounded-2xl overflow-hidden border-4 border-white shadow-xl hidden md:block">
-                <Image src="/IMG_6976.JPG" alt="프리미엄 족욕" fill className="object-cover" />
-              </div>
-            </div>
-
-            <div>
-              <p className="font-display text-accent text-sm tracking-[0.3em] uppercase italic" style={{ fontWeight: 300 }}>About Us</p>
-              <h2 className="section-title mt-4">
-                품위 있는 노후를
-                <br />
-                함께 가꿉니다
-              </h2>
-              <div className="gold-line mt-5" />
-              <p className="mt-8 text-neutral-600 text-[15px] leading-[1.9]">
-                중앙요양원은 대전역 바로 앞, 교통이 가장 편리한 곳에 위치해 있습니다.
-                최근 전면 리모델링을 마친 9층 대형 건물에서 호텔처럼 품격 있는
-                요양 서비스를 제공합니다.
-              </p>
-              <p className="mt-4 text-neutral-600 text-[15px] leading-[1.9]">
-                전문 간호 인력이 24시간 상주하며, 물리치료·운동재활·인지치료 등
-                체계적인 프로그램으로 어르신의 건강을 돌봅니다.
-              </p>
-              <div className="mt-10 flex gap-10">
-                {[
-                  { num: "9", unit: "층", label: "대형 건물" },
-                  { num: "24", unit: "h", label: "전문 간호" },
-                  { num: "365", unit: "일", label: "연중무휴" },
-                ].map((s) => (
-                  <div key={s.label}>
-                    <p className="font-display text-3xl text-primary" style={{ fontWeight: 500 }}>
-                      {s.num}<span className="text-accent text-base ml-0.5">{s.unit}</span>
-                    </p>
-                    <p className="text-xs text-neutral-500 mt-1">{s.label}</p>
-                  </div>
-                ))}
-              </div>
-              <Link href="/about" className="btn-outline-dark mt-10">더 알아보기</Link>
-            </div>
+            ))}
           </div>
+          <Link href="/about" className="btn-outline-dark mt-10">더 알아보기</Link>
         </div>
       </section>
 
