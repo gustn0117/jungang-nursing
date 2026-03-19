@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap');
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    font-family: 'Noto Sans KR', system-ui, sans-serif;
+    color: #262626;
+    background-color: #FAF7F2;
+  }
+
+  ::selection {
+    background-color: #C4A35A;
+    color: white;
+  }
+
+  h1 {
+    line-height: 1.25 !important;
+  }
+
+  h2, h3, h4 {
+    line-height: 1.35 !important;
+  }
+}
+
+@layer components {
+  /* Premium section styling */
+  .section-premium {
+    @apply py-24 md:py-32 lg:py-40;
+  }
+
+  .section-title {
+    @apply font-serif text-3xl md:text-4xl lg:text-5xl text-neutral-900 tracking-tight;
+    font-weight: 400;
+  }
+
+  .section-subtitle {
+    @apply text-base md:text-lg text-neutral-500 mt-5 max-w-2xl leading-[1.75];
+  }
+
+  /* Gold decorative line */
+  .gold-line {
+    @apply w-16 h-px bg-accent mt-6;
+  }
+
+  .gold-line-center {
+    @apply w-16 h-px bg-accent mt-6 mx-auto;
+  }
+
+  /* Premium card */
+  .card-premium {
+    @apply bg-white border border-neutral-100 rounded-lg
+           hover:border-accent/30 hover:shadow-[0_12px_40px_rgba(0,0,0,0.08)]
+           transition-all duration-500;
+  }
+
+  /* Page hero banner */
+  .page-hero {
+    @apply relative pt-20 bg-neutral-900 text-white overflow-hidden;
+  }
+
+  .page-hero::before {
+    content: '';
+    @apply absolute inset-0;
+    background: radial-gradient(ellipse at 30% 50%, rgba(196, 163, 90, 0.08) 0%, transparent 70%);
+  }
+
+  /* Premium button */
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2
+           bg-primary hover:bg-primary-dark text-white
+           px-8 py-4 text-sm tracking-[0.15em] uppercase rounded-full
+           transition-all duration-300
+           border border-transparent hover:border-accent/20
+           hover:shadow-lg hover:shadow-primary/20;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2
+           bg-transparent text-white
+           px-8 py-4 text-sm tracking-[0.15em] uppercase rounded-full
+           border border-white/30 hover:border-accent hover:text-accent
+           transition-all duration-300;
+  }
+
+  .btn-outline-dark {
+    @apply inline-flex items-center justify-center gap-2
+           bg-transparent text-neutral-700
+           px-8 py-4 text-sm tracking-[0.15em] uppercase rounded-full
+           border border-neutral-300 hover:border-accent hover:text-accent
+           transition-all duration-300;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .delay-100 { animation-delay: 0.1s; }
+  .delay-200 { animation-delay: 0.2s; }
+  .delay-300 { animation-delay: 0.3s; }
+  .delay-400 { animation-delay: 0.4s; }
+  .delay-500 { animation-delay: 0.5s; }
+  .delay-600 { animation-delay: 0.6s; }
+}
