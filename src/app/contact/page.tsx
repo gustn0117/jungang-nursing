@@ -9,7 +9,7 @@ const contactInfo = [
       </svg>
     ),
     label: "주소",
-    value: "대전광역시 동구 대전역 앞",
+    value: "대전시 동구 중동 태전로 5",
     sub: "대전역 도보 3분",
   },
   {
@@ -19,8 +19,8 @@ const contactInfo = [
       </svg>
     ),
     label: "전화",
-    value: "042-000-0000",
-    href: "tel:042-000-0000",
+    value: "042-226-7575",
+    href: "tel:042-226-7575",
   },
   {
     icon: (
@@ -108,7 +108,7 @@ export default function ContactPage() {
               </div>
 
               <a
-                href="tel:042-000-0000"
+                href="tel:042-226-7575"
                 className="btn-primary mt-10"
               >
                 전화 상담하기
@@ -166,8 +166,8 @@ export default function ContactPage() {
             <br className="sm:hidden" /> 함께 준비하겠습니다.
           </h3>
           <p className="mt-4 text-neutral-400">상담은 무료입니다. 부담 없이 연락주세요.</p>
-          <a href="tel:042-000-0000" className="btn-primary mt-10">
-            042-000-0000
+          <a href="tel:042-226-7575" className="btn-primary mt-10">
+            042-226-7575
           </a>
         </div>
       </section>

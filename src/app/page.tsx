@@ -14,7 +14,7 @@ export default function Home() {
       {/* ── Hero ── */}
       <section className="relative min-h-screen flex items-center justify-center bg-neutral-900 overflow-hidden">
         <div className="absolute inset-0 animate-[heroZoom_20s_ease-in-out_infinite_alternate]">
-          <Image src="/IMG_4956.JPG" alt="중앙요양원 건물 외관" fill className="object-cover object-center" priority />
+          <Image src="/IMG_6984.JPG" alt="중앙요양원 카페형 라운지" fill className="object-cover object-center" priority />
         </div>
         <div className="absolute inset-0 bg-neutral-900/55" />
         <div className="absolute inset-0 bg-gradient-to-t from-neutral-900 via-transparent to-neutral-900/30" />
@@ -246,6 +246,61 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ── Reviews ── */}
+      <section className="py-24 md:py-32 bg-warm-dark">
+        <div className="max-w-5xl mx-auto px-6 lg:px-10">
+          <div className="text-center mb-14">
+            <p className="font-display text-accent text-sm tracking-[0.3em] uppercase italic" style={{ fontWeight: 300 }}>Reviews</p>
+            <h2 className="section-title mt-4">가족들의 이야기</h2>
+            <div className="gold-line-center" />
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-6">
+            {[
+              {
+                text: "어머니를 모시고 여러 요양원을 다녀봤지만, 시설이나 간호 수준이 여기만큼 좋은 곳은 없었습니다. 무엇보다 직원분들이 진심으로 대해주셔서 감사합니다.",
+                name: "보호자 김○○",
+                relation: "어머니 입소 2년차",
+              },
+              {
+                text: "대전역 바로 앞이라 면회 오기 정말 편합니다. 깔끔하게 리모델링된 시설에 족욕, 재활치료까지 체계적으로 해주시니 안심이 됩니다.",
+                name: "보호자 박○○",
+                relation: "아버지 입소 1년차",
+              },
+              {
+                text: "매주 보내주시는 사진과 영상 덕분에 멀리서도 부모님 상태를 잘 알 수 있어요. 생일잔치도 챙겨주시고, 정말 가족처럼 돌봐주십니다.",
+                name: "보호자 이○○",
+                relation: "아버지 입소 3년차",
+              },
+            ].map((review) => (
+              <div key={review.name} className="bg-white rounded-2xl p-8 border border-neutral-100">
+                <div className="flex gap-1 mb-5">
+                  {Array.from({ length: 5 }).map((_, i) => (
+                    <svg key={i} className="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
+                  ))}
+                </div>
+                <p className="text-neutral-600 text-[15px] leading-[1.9]">{review.text}</p>
+                <div className="mt-6 pt-5 border-t border-neutral-100">
+                  <p className="text-sm font-semibold text-neutral-800">{review.name}</p>
+                  <p className="text-xs text-neutral-400 mt-0.5">{review.relation}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="text-center mt-12">
+            <a href="#" className="inline-flex items-center gap-2 text-accent hover:text-accent-dark text-sm tracking-[0.15em] uppercase transition-colors">
+              블로그에서 리뷰 더 보기
+              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* ── CTA ── */}
       <section className="relative py-28 md:py-36 overflow-hidden">
         <div className="absolute inset-0">
@@ -264,7 +319,7 @@ export default function Home() {
           </p>
           <div className="mt-10 flex flex-wrap justify-center gap-4">
             <Link href="/contact" className="btn-primary">상담 문의하기</Link>
-            <a href="tel:042-000-0000" className="btn-outline">042-000-0000</a>
+            <a href="tel:042-226-7575" className="btn-outline">042-226-7575</a>
           </div>
         </div>
       </section>

@@ -53,12 +53,12 @@ export default function Footer() {
               Contact
             </p>
             <div className="space-y-3 text-sm">
-              <p className="text-neutral-500">대전광역시 동구 대전역 앞</p>
+              <p className="text-neutral-500">대전시 동구 중동 태전로 5</p>
               <a
-                href="tel:042-000-0000"
+                href="tel:042-226-7575"
                 className="block text-white hover:text-accent transition-colors text-lg font-medium"
               >
-                042-000-0000
+                042-226-7575
               </a>
               <p className="text-neutral-500">면회 시간: 매일 10:00 ~ 17:00</p>
             </div>
