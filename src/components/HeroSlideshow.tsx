@@ -1,48 +1,76 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import Image from "next/image";
 
 const slides = [
   { src: "/hero-main.png", alt: "중앙요양원 옥상 공연", position: "center 60%" },
   { src: "/IMG_4956.JPG", alt: "중앙요양원 건물 외관", position: "center top" },
   { src: "/IMG_6984.JPG", alt: "카페형 라운지", position: "center center" },
-  { src: "/IMG_6913.JPG", alt: "생일 파티", position: "center center" },
-  { src: "/IMG_6990.JPG", alt: "옥상 공연", position: "center 40%" },
-  { src: "/IMG_6898.JPG", alt: "따뜻한 돌봄", position: "center center" },
 ];
+
+const DURATION = 6000;
+const FADE = 1500;
 
 export default function HeroSlideshow() {
   const [current, setCurrent] = useState(0);
+  const [next, setNext] = useState(1);
+  const [transitioning, setTransitioning] = useState(false);
+  const [key, setKey] = useState(0);
+
+  const advance = useCallback(() => {
+    const nextIdx = (current + 1) % slides.length;
+    setNext(nextIdx);
+    setTransitioning(true);
+
+    setTimeout(() => {
+      setCurrent(nextIdx);
+      setTransitioning(false);
+      setKey((k) => k + 1);
+    }, FADE);
+  }, [current]);
 
   useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrent((prev) => (prev + 1) % slides.length);
-    }, 6000);
+    const timer = setInterval(advance, DURATION);
     return () => clearInterval(timer);
-  }, []);
+  }, [advance]);
 
   return (
     <>
-      {slides.map((slide, i) => (
-        <div
-          key={slide.src}
-          className="absolute inset-0 transition-opacity duration-[2000ms] ease-in-out"
-          style={{
-            opacity: i === current ? 1 : 0,
-            animation: i === current ? "heroZoomIn 12s ease-out forwards" : "none",
-          }}
-        >
-          <Image
-            src={slide.src}
-            alt={slide.alt}
-            fill
-            className="object-cover"
-            style={{ objectPosition: slide.position }}
-            priority={i === 0}
-          />
-        </div>
-      ))}
+      {/* Current slide - slowly zooming in */}
+      <div
+        key={`current-${key}`}
+        className="absolute inset-0"
+        style={{
+          animation: `heroZoomIn ${DURATION + FADE}ms ease-out forwards`,
+        }}
+      >
+        <Image
+          src={slides[current].src}
+          alt={slides[current].alt}
+          fill
+          className="object-cover"
+          style={{ objectPosition: slides[current].position }}
+          priority
+        />
+      </div>
+
+      {/* Next slide - fades in on top, starts at scale 1 */}
+      <div
+        className="absolute inset-0 transition-opacity ease-in-out"
+        style={{
+          opacity: transitioning ? 1 : 0,
+          transitionDuration: `${FADE}ms`,
+        }}
+      >
+        <Image
+          src={slides[next].src}
+          alt={slides[next].alt}
+          fill
+          className="object-cover"
+          style={{ objectPosition: slides[next].position }}
+        />
+      </div>
     </>
   );
 }
