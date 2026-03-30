@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import HeroSlideshow from "@/components/HeroSlideshow";
 
 const highlights = [
   { title: "대전역 도보 3분", desc: "기차·지하철·버스 모두 편리" },
@@ -13,9 +14,7 @@ export default function Home() {
     <>
       {/* ── Hero ── */}
       <section className="relative min-h-screen flex items-center justify-center bg-neutral-900 overflow-hidden">
-        <div className="absolute inset-0 animate-[heroZoom_20s_ease-in-out_infinite_alternate]">
-          <Image src="/hero-main.png" alt="중앙요양원 옥상 공연" fill className="object-cover object-[center_60%]" priority />
-        </div>
+        <HeroSlideshow />
         <div className="absolute inset-0 bg-neutral-900/50" />
         <div className="absolute inset-0 bg-gradient-to-t from-neutral-900/80 via-neutral-900/20 to-neutral-900/60" />
 
