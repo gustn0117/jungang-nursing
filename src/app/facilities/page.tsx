@@ -17,7 +17,7 @@ const facilities = [
   {
     title: "족욕 시설",
     desc: "골드 수전의 프리미엄 족욕 시설에서 혈액순환을 촉진하고 편안한 휴식을 선사합니다.",
-    image: "/IMG_6976.JPG",
+    image: "/footbath.jpg",
     features: ["골드 수전 족욕 장비", "아로마 입욕제", "혈액순환 촉진"],
   },
   {
@@ -94,7 +94,7 @@ export default function FacilitiesPage() {
       {/* CTA */}
       <section className="relative py-20 md:py-24 overflow-hidden">
         <div className="absolute inset-0">
-          <Image src="/IMG_6976.JPG" alt="" fill className="object-cover" />
+          <Image src="/footbath.jpg" alt="" fill className="object-cover" />
           <div className="absolute inset-0 bg-neutral-900/70" />
         </div>
         <div className="relative max-w-2xl mx-auto px-6 text-center">

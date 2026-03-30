@@ -129,7 +129,7 @@ export default function Home() {
             </div>
             {/* Top right */}
             <div className="group relative rounded-2xl overflow-hidden aspect-[4/3]">
-              <Image src="/IMG_6976.JPG" alt="족욕 시설" fill className="object-cover group-hover:scale-105 transition-transform duration-700" />
+              <Image src="/footbath.jpg" alt="족욕 시설" fill className="object-cover group-hover:scale-105 transition-transform duration-700" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 p-5">
                 <p className="text-white font-medium">프리미엄 족욕</p>
@@ -190,7 +190,7 @@ export default function Home() {
           {/* Varied grid */}
           <div className="grid md:grid-cols-4 gap-4">
             <div className="md:col-span-2 group relative aspect-[16/10] rounded-2xl overflow-hidden">
-              <Image src="/IMG_6946.JPG" alt="워크메이트 재활" fill className="object-cover group-hover:scale-105 transition-transform duration-700" />
+              <Image src="/rehab-walkmate.jpg" alt="워크메이트 재활" fill className="object-cover group-hover:scale-105 transition-transform duration-700" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
               <div className="absolute bottom-0 left-0 p-6">
                 <span className="inline-block px-3 py-1 rounded-full text-xs font-medium bg-emerald-500/20 text-emerald-100 backdrop-blur-sm mb-2">재활치료</span>
@@ -198,7 +198,7 @@ export default function Home() {
               </div>
             </div>
             <div className="group relative aspect-[4/3] md:aspect-auto rounded-2xl overflow-hidden">
-              <Image src="/IMG_6967.JPG" alt="족욕 프로그램" fill className="object-cover object-center group-hover:scale-105 transition-transform duration-700" />
+              <Image src="/footbath.jpg" alt="족욕 프로그램" fill className="object-cover object-center group-hover:scale-105 transition-transform duration-700" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
               <div className="absolute bottom-0 left-0 p-5">
                 <p className="text-white font-medium">족욕 프로그램</p>
@@ -228,7 +228,7 @@ export default function Home() {
               </div>
             </div>
             <div className="group relative aspect-[4/3] rounded-2xl overflow-hidden">
-              <Image src="/IMG_5378.JPG" alt="기립 훈련" fill className="object-cover object-top group-hover:scale-105 transition-transform duration-700" />
+              <Image src="/rehab-walkmate.jpg" alt="기립 훈련" fill className="object-cover object-top group-hover:scale-105 transition-transform duration-700" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
               <div className="absolute bottom-0 left-0 p-5">
                 <p className="text-white font-medium">기립 훈련</p>
