@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import HeroSlideshow from "@/components/HeroSlideshow";
+import BgmPlayer from "@/components/BgmPlayer";
 
 const highlights = [
   { title: "대전역 도보 3분", desc: "기차·지하철·버스 모두 편리" },
@@ -12,6 +13,7 @@ const highlights = [
 export default function Home() {
   return (
     <>
+      <BgmPlayer />
       {/* ── Hero ── */}
       <section className="relative min-h-screen flex items-center justify-center bg-neutral-900 overflow-hidden">
         <HeroSlideshow />
