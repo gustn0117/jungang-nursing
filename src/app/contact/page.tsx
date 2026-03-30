@@ -107,12 +107,22 @@ export default function ContactPage() {
                 ))}
               </div>
 
-              <a
-                href="tel:042-226-7575"
-                className="btn-primary mt-10"
-              >
-                전화 상담하기
-              </a>
+              <div className="mt-10 flex flex-wrap gap-3">
+                <a
+                  href="tel:042-226-7575"
+                  className="btn-primary"
+                >
+                  전화 상담하기
+                </a>
+                <a
+                  href="https://naver.me/G7CnWqeF"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-outline-dark"
+                >
+                  네이버 플레이스
+                </a>
+              </div>
             </div>
 
             {/* Map */}
