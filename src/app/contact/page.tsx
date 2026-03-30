@@ -115,17 +115,19 @@ export default function ContactPage() {
               </a>
             </div>
 
-            {/* Map Placeholder */}
+            {/* Map */}
             <div className="lg:col-span-3">
-              <div className="aspect-[4/3] lg:aspect-auto lg:h-full min-h-[400px] bg-white border border-neutral-100 rounded-2xl flex items-center justify-center">
-                <div className="text-center text-neutral-400">
-                  <svg className="w-12 h-12 mx-auto mb-4 text-neutral-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={0.8}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                  </svg>
-                  <p className="text-sm font-medium text-neutral-500">지도 영역</p>
-                  <p className="text-xs mt-1 text-neutral-400">카카오맵 / 네이버지도 삽입 가능</p>
-                </div>
+              <div className="aspect-[4/3] lg:aspect-auto lg:h-full min-h-[400px] rounded-2xl overflow-hidden border border-neutral-100">
+                <iframe
+                  src="https://www.google.com/maps?q=대전시+동구+태전로+5&output=embed"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0, minHeight: 400 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="중앙요양원 위치"
+                />
               </div>
             </div>
           </div>
