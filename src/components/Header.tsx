@@ -8,6 +8,7 @@ const navItems = [
   { label: "요양원소개", href: "/about" },
   { label: "시설안내", href: "/facilities" },
   { label: "프로그램", href: "/programs" },
+  { label: "이용후기", href: "/reviews" },
   { label: "오시는길", href: "/contact" },
 ];
 

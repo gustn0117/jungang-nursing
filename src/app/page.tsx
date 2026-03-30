@@ -291,12 +291,12 @@ export default function Home() {
           </div>
 
           <div className="text-center mt-12">
-            <a href="#" className="inline-flex items-center gap-2 text-accent hover:text-accent-dark text-sm tracking-[0.15em] uppercase transition-colors">
-              블로그에서 리뷰 더 보기
+            <Link href="/reviews" className="inline-flex items-center gap-2 text-accent hover:text-accent-dark text-sm tracking-[0.15em] uppercase transition-colors">
+              리뷰 더 보기
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
               </svg>
-            </a>
+            </Link>
           </div>
         </div>
       </section>
