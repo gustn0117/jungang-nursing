@@ -14,17 +14,17 @@ export default function Home() {
       {/* ── Hero ── */}
       <section className="relative min-h-screen flex items-center justify-center bg-neutral-900 overflow-hidden">
         <div className="absolute inset-0 animate-[heroZoom_20s_ease-in-out_infinite_alternate]">
-          <Image src="/IMG_6984.JPG" alt="중앙요양원 카페형 라운지" fill className="object-cover object-center" priority />
+          <Image src="/hero-main.png" alt="중앙요양원 옥상 공연" fill className="object-cover object-[center_60%]" priority />
         </div>
-        <div className="absolute inset-0 bg-neutral-900/55" />
-        <div className="absolute inset-0 bg-gradient-to-t from-neutral-900 via-transparent to-neutral-900/30" />
+        <div className="absolute inset-0 bg-neutral-900/50" />
+        <div className="absolute inset-0 bg-gradient-to-t from-neutral-900/80 via-neutral-900/20 to-neutral-900/60" />
 
         <div className="relative max-w-4xl mx-auto px-6 w-full text-center pt-32 pb-40">
           <div className="w-px h-12 bg-gradient-to-b from-transparent to-accent/50 mx-auto mb-8 animate-fade-in" />
           <p className="font-display text-accent text-xs md:text-sm tracking-[0.4em] uppercase mb-8 animate-fade-in italic" style={{ fontWeight: 300 }}>
             Jungang Nursing Home
           </p>
-          <h1 className="font-serif text-4xl md:text-5xl lg:text-7xl text-white animate-fade-in-up">
+          <h1 className="font-serif text-4xl md:text-5xl lg:text-7xl text-white animate-fade-in-up" style={{ textShadow: '0 2px 20px rgba(0,0,0,0.3)' }}>
             대전의 중심에서,
           </h1>
           <p className="font-serif text-2xl md:text-3xl lg:text-4xl text-white/80 mt-3 animate-fade-in-up delay-100 opacity-0" style={{ lineHeight: 1.5 }}>
