@@ -89,12 +89,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Photo Strip */}
-      <section className="relative h-[40vh] overflow-hidden">
-        <Image src="/IMG_5381.JPG" alt="재활 훈련" fill className="object-cover object-center" />
-        <div className="absolute inset-0 bg-neutral-900/40" />
-      </section>
-
       {/* Core Values */}
       <section className="py-24 md:py-32 bg-white">
         <div className="max-w-6xl mx-auto px-6 lg:px-10">
