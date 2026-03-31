@@ -25,13 +25,13 @@ const programs = [
     name: "미술치료",
     color: "bg-amber-500/20 text-amber-100",
     desc: "그림과 색채 활동을 통한 정서 표현과 심리 안정을 돕습니다.",
-    image: "/IMG_5399.JPG",
+    image: "/new-activity-01.jpg",
   },
   {
     name: "문화 프로그램",
     color: "bg-rose-500/20 text-rose-100",
     desc: "옥상 공연, 노래교실 등 즐거운 문화 활동으로 활력을 드립니다.",
-    image: "/IMG_6990.JPG",
+    image: "/new-rooftop.jpg",
   },
   {
     name: "생일잔치",
@@ -55,7 +55,7 @@ export default function ProgramsPage() {
       {/* Page Hero */}
       <section className="relative pt-20 bg-neutral-900 text-white overflow-hidden">
         <div className="absolute inset-0">
-          <Image src="/IMG_6990.JPG" alt="" fill className="object-cover opacity-25" />
+          <Image src="/new-rooftop.jpg" alt="" fill className="object-cover opacity-25" />
           <div className="absolute inset-0 bg-gradient-to-t from-neutral-900 to-neutral-900/50" />
         </div>
         <div className="relative max-w-7xl mx-auto px-6 lg:px-10 py-28 md:py-36">
@@ -124,7 +124,7 @@ export default function ProgramsPage() {
       {/* CTA */}
       <section className="relative py-20 md:py-24 overflow-hidden">
         <div className="absolute inset-0">
-          <Image src="/IMG_5399.JPG" alt="" fill className="object-cover" />
+          <Image src="/new-activity-01.jpg" alt="" fill className="object-cover" />
           <div className="absolute inset-0 bg-neutral-900/70" />
         </div>
         <div className="relative max-w-2xl mx-auto px-6 text-center">

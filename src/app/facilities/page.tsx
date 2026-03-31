@@ -17,7 +17,7 @@ const facilities = [
   {
     title: "족욕 시설",
     desc: "골드 수전의 프리미엄 족욕 시설에서 혈액순환을 촉진하고 편안한 휴식을 선사합니다.",
-    image: "/footbath.jpg",
+    image: "/new-footbath.jpg",
     features: ["골드 수전 족욕 장비", "아로마 입욕제", "혈액순환 촉진"],
   },
   {
@@ -29,7 +29,7 @@ const facilities = [
   {
     title: "카페형 면회 공간",
     desc: "넓고 쾌적한 카페 같은 면회 공간에서 가족과 따뜻한 시간을 함께합니다.",
-    image: "/IMG_6984.JPG",
+    image: "/new-worship.jpg",
     features: ["카페형 인테리어", "편안한 좌석 배치", "가족 면회 최적화"],
   },
   {
@@ -47,7 +47,7 @@ export default function FacilitiesPage() {
       {/* Page Hero */}
       <section className="relative pt-20 bg-neutral-900 text-white overflow-hidden">
         <div className="absolute inset-0">
-          <Image src="/IMG_6984.JPG" alt="" fill className="object-cover opacity-25" />
+          <Image src="/new-worship.jpg" alt="" fill className="object-cover opacity-25" />
           <div className="absolute inset-0 bg-gradient-to-t from-neutral-900 to-neutral-900/50" />
         </div>
         <div className="relative max-w-7xl mx-auto px-6 lg:px-10 py-28 md:py-36">
@@ -94,7 +94,7 @@ export default function FacilitiesPage() {
       {/* CTA */}
       <section className="relative py-20 md:py-24 overflow-hidden">
         <div className="absolute inset-0">
-          <Image src="/footbath.jpg" alt="" fill className="object-cover" />
+          <Image src="/new-footbath.jpg" alt="" fill className="object-cover" />
           <div className="absolute inset-0 bg-neutral-900/70" />
         </div>
         <div className="relative max-w-2xl mx-auto px-6 text-center">

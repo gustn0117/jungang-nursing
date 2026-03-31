@@ -57,7 +57,7 @@ export default function ContactPage() {
       {/* Page Hero */}
       <section className="relative pt-20 bg-neutral-900 text-white overflow-hidden">
         <div className="absolute inset-0">
-          <Image src="/IMG_4956.JPG" alt="" fill className="object-cover opacity-20" />
+          <Image src="/new-building.jpg" alt="" fill className="object-cover opacity-20" />
           <div className="absolute inset-0 bg-gradient-to-t from-neutral-900 to-neutral-900/60" />
         </div>
         <div className="relative max-w-7xl mx-auto px-6 lg:px-10 py-28 md:py-36">
@@ -169,7 +169,7 @@ export default function ContactPage() {
       {/* CTA */}
       <section className="relative py-20 md:py-24 bg-neutral-900 text-center overflow-hidden">
         <div className="absolute inset-0">
-          <Image src="/IMG_6898.JPG" alt="" fill className="object-cover opacity-15" />
+          <Image src="/new-rehab-02.jpg" alt="" fill className="object-cover opacity-15" />
           <div className="absolute inset-0 bg-neutral-900/70" />
         </div>
         <div className="relative max-w-2xl mx-auto px-6">

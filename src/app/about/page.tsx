@@ -26,7 +26,7 @@ export default function AboutPage() {
       {/* Page Hero */}
       <section className="relative pt-20 bg-neutral-900 text-white overflow-hidden">
         <div className="absolute inset-0">
-          <Image src="/IMG_6898.JPG" alt="" fill className="object-cover opacity-25" />
+          <Image src="/new-rehab-02.jpg" alt="" fill className="object-cover opacity-25" />
           <div className="absolute inset-0 bg-gradient-to-t from-neutral-900 to-neutral-900/50" />
         </div>
         <div className="relative max-w-7xl mx-auto px-6 lg:px-10 py-28 md:py-36">
@@ -46,10 +46,10 @@ export default function AboutPage() {
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             <div className="relative">
               <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl shadow-neutral-200">
-                <Image src="/IMG_4956.JPG" alt="중앙요양원 외관" fill className="object-cover object-top" />
+                <Image src="/new-building.jpg" alt="중앙요양원 외관" fill className="object-cover object-top" />
               </div>
               <div className="absolute -bottom-5 -right-5 w-44 h-44 rounded-2xl overflow-hidden border-4 border-warm shadow-xl hidden md:block">
-                <Image src="/IMG_6984.JPG" alt="카페형 면회실" fill className="object-cover" />
+                <Image src="/new-desk.jpg" alt="카페형 면회실" fill className="object-cover" />
               </div>
             </div>
 
@@ -130,7 +130,7 @@ export default function AboutPage() {
       {/* CTA */}
       <section className="relative py-20 md:py-24 overflow-hidden">
         <div className="absolute inset-0">
-          <Image src="/IMG_6898.JPG" alt="" fill className="object-cover" />
+          <Image src="/new-rehab-02.jpg" alt="" fill className="object-cover" />
           <div className="absolute inset-0 bg-neutral-900/70" />
         </div>
         <div className="relative max-w-2xl mx-auto px-6 text-center">

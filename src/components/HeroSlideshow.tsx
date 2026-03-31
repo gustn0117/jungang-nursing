@@ -5,8 +5,8 @@ import Image from "next/image";
 
 const slides = [
   { src: "/hero-main.png", alt: "중앙요양원 옥상 공연", position: "center 60%" },
-  { src: "/IMG_4956.JPG", alt: "중앙요양원 건물 외관", position: "center top" },
-  { src: "/IMG_6984.JPG", alt: "카페형 라운지", position: "center center" },
+  { src: "/new-building.jpg", alt: "중앙요양원 건물 외관", position: "center 30%" },
+  { src: "/new-rehab-04.jpg", alt: "워크메이트 재활", position: "center center" },
 ];
 
 const DURATION = 6000;
